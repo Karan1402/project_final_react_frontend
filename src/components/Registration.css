@@ -1,0 +1,99 @@
+/* registration.css */
+
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  animation: changeBackground 10s infinite; /* Change background every 10 seconds, set as needed */
+  /* Smooth transition for background color change */
+  overflow: auto;
+}
+.registration-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.website-name {
+  font-size: 2rem;
+  color: #f7f2f2;
+}
+
+.quotation {
+  font-style: italic;
+  color: #f8f2f2;
+  margin-top: 10px;
+}
+
+.registration-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(105, 67, 67, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Add your custom styles here */
+@keyframes changeBackground {
+  0% {
+    background: url("image1.jpg") center/cover no-repeat fixed;
+  }
+  25% {
+    background: url("image2.jpg") center/cover no-repeat fixed;
+  }
+  50% {
+    background: url("image3.jpg") center/cover no-repeat fixed;
+  }
+  75% {
+    background: url("image4.jpg") center/cover no-repeat fixed;
+  }
+  100% {
+    background: url("image5.jpg") center/cover no-repeat fixed;
+  }
+}

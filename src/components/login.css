@@ -1,0 +1,156 @@
+/* Updated styles for a more beautiful and responsive login page with a background image carousel */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  /* overflow: auto; Prevent scrollbars from appearing when the background images change */
+  /* animation: changeBackground 10s infinite; Change background every 10 seconds, set as needed */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
+  animation: changeBackground 10s infinite; /* Change background every 10 seconds, set as needed */
+  /* Smooth transition for background color change */
+  overflow: auto;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.website-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(192, 25, 25, 0.5);
+  transition: color 0.5s ease; /* Smooth transition for text color change */
+}
+
+.quotation {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 0;
+  text-shadow: 1px 1px 2px rgba(212, 46, 46, 0.3);
+  transition: color 0.5s ease; /* Smooth transition for text color change */
+}
+
+.login-form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #333333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add a subtle animation for the form */
+.login-form {
+  animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .login-content {
+    margin-left: 10px;
+  }
+
+  .login-form {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login-content {
+    margin-left: 5px;
+  }
+
+  .login-form {
+    padding: 10px;
+  }
+
+  input {
+    padding: 10px;
+  }
+}
+
+/* Background image carousel animation */
+
+@keyframes changeBackground {
+  0% {
+    background: url("image1.jpg") center/cover no-repeat fixed;
+  }
+  25% {
+    background: url("image2.jpg") center/cover no-repeat fixed;
+  }
+  50% {
+    background: url("image3.jpg") center/cover no-repeat fixed;
+  }
+  75% {
+    background: url("image4.jpg") center/cover no-repeat fixed;
+  }
+  100% {
+    background: url("image5.jpg") center/cover no-repeat fixed;
+  }
+}
+
+/* Additional color changes for website name and quotation */
